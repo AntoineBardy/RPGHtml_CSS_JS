@@ -20,7 +20,7 @@ for (var i = 0; i < monstersElements.length; i++)
 {
   monsters[i].element = monstersElements[i];
   monstersElements[i].addEventListener('mouseover', MontrerInfoBulle);
-  monstersElements[i].addEventListener('click', changeDefClick);
+  monstersElements[i].addEventListener('click', VoirAutreMonstre);
   monstersElements[i].addEventListener('mouseout', CacherInfobulle);
 }
 var target = monsters[0];
@@ -59,5 +59,41 @@ function MontrerInfoBulle(e) {
 function CacherInfobulle(e) {
   if (e.target.id == "Monstre3") {
     e.target.children[0].style.visibility = "hidden";
+  }
+}
+
+function VoirAutreMonstre(e) {
+  if (e.target.id == "Monstre1") {
+    for (var i = 0; i < monstersElements.length; i++)
+    {
+      if (monstersElements[i] == e.target) {
+        target = monsters[i];
+      }
+    }
+    updateUI();
+  }
+}
+
+function VoirAutreMonstre(e) {
+  if (e.target.id == "Monstre2") {
+    for (var i = 0; i < monstersElements.length; i++)
+    {
+      if (monstersElements[i] == e.target) {
+        target = monsters[i];
+      }
+    }
+    updateUI();
+  }
+}
+
+function VoirAutreMonstre(e) {
+  if (e.target.id == "Monstre3") {
+    for (var i = 0; i < monstersElements.length; i++)
+    {
+      if (monstersElements[i] == e.target) {
+        target = monsters[i];
+      }
+    }
+    updateUI();
   }
 }
