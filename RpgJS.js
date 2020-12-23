@@ -19,9 +19,33 @@ var monsters = [pumpkin, AlienCaptain, SkullDemon];
 for (var i = 0; i < monstersElements.length; i++)
 {
   monsters[i].element = monstersElements[i];
-  monstersElements[i].addEventListener('mouseover', changeDefOver);
+  monstersElements[i].addEventListener('mouseover', MontrerInfoBulle);
   monstersElements[i].addEventListener('click', changeDefClick);
-  monstersElements[i].addEventListener('mouseout', changeDefOut);
+  monstersElements[i].addEventListener('mouseout', CacherInfobulle);
 }
 var target = monsters[0];
 var characters = [MatthieuLeBoss, MiniLaink, MuscleTom, Bouclette];
+
+function MontrerInfoBulle(e) {
+  if (e.target.id == "Monstre1") {
+    e.target.children[0].style.visibility = "visible";
+  }
+}
+
+function CacherInfobulle(e) {
+  if (e.target.id == "Monstre1") {
+    e.target.children[0].style.visibility = "hidden";
+  }
+}
+
+function MontrerInfoBulle(e) {
+  if (e.target.id == "Monstre2") {
+    e.target.children[0].style.visibility = "visible";
+  }
+}
+
+function CacherInfobulle(e) {
+  if (e.target.id == "Monstre2") {
+    e.target.children[0].style.visibility = "hidden";
+  }
+}
