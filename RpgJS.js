@@ -49,3 +49,15 @@ function CacherInfobulle(e) {
     e.target.children[0].style.visibility = "hidden";
   }
 }
+
+function MontrerInfoBulle(e) {
+  if (e.target.id == "Monstre3") {
+    e.target.children[0].style.visibility = "visible";
+  }
+}
+
+function CacherInfobulle(e) {
+  if (e.target.id == "Monstre3") {
+    e.target.children[0].style.visibility = "hidden";
+  }
+}
