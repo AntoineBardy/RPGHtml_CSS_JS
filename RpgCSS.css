@@ -85,3 +85,14 @@ input:hover {
   display: flex;
 }
 
+.Compétences{
+  margin: 30px;
+  background-color: black;
+  color: darkblue;
+  display : inline-block;
+  vertical-align: top;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
