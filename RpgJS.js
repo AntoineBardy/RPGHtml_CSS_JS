@@ -121,3 +121,43 @@ function nextRound(){
 	monsterStage()
 	nextStage();
 }
+
+function attaque() {
+  target.health -= characters[stage].attack;
+  console.log(target.health);
+  characters[stage].lastAction = "attaque";
+  nextStage();
+}
+
+function defense() {
+  characters[stage].lastAction = "defense";
+}
+ 
+function AtkSpecial() {
+  if (stage == 0) {
+	target.health -= characters[stage].attack * 2;
+	characters[stage].mana -= 15;
+  } else if (stage == 1) {
+	var injured = characters[0]; 
+	for (var i=0;i < characters.length; i++){
+		if (characters[i].health < injured.health && characters[i].health > 0){
+			injured = characters[i];
+		}
+	}
+	injured.health += 20;
+	characters[stage].mana -= 25;
+  } else if (stage == 2) {
+    for (var i = 0; i < monsters.length; i++)
+    {
+      monsters[i].health -= 15;
+    }
+    characters[stage].mana -= 20;
+  } else if (stage == 3) {
+	for (var i=0; i < 4; i++){
+		monsters[Math.floor((Math.random() * 100)) % monsters.length].health -= Math.floor(characters[stage].attack * 0.5) ;
+	}
+	characters[stage].mana -= 10;
+  }
+  characters[stage].lastAction = "special";
+  nextStage();
+}
