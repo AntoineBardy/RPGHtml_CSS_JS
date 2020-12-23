@@ -97,3 +97,27 @@ function VoirAutreMonstre(e) {
     updateUI();
   }
 }
+
+function win() {
+  dialogue.innerHTML = "You Win !";
+  alert("You Win !");
+}
+
+function lose() {
+  dialogue.innerHTML = "You lose !";
+  alert("You lose!");
+}
+
+function nextRound(){
+	var charactersAlive = false;
+	for (var i=0; i<characters.length; i++){
+		if (characters[i].health > 0){
+			charactersAlive = true; 
+		}
+	}
+	if (!charactersAlive){
+		lose();
+	}
+	monsterStage()
+	nextStage();
+}
