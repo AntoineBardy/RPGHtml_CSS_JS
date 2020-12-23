@@ -7,3 +7,11 @@ var pumpkin =   {element:null, class:"Monster", health:100, attack:8};
 var AlienCaptain =   {element:null, class:"Monster", health:200, attack:10};
 var SkullDemon =   {element:null, class:"Monster", health:400, attack:15};
 
+var stage = 0;
+var tour = 0;
+var dialogue = document.getElementById('Dialogue');
+
+var elementMonstres1 = document.getElementsByClassName("Monstre1");
+var elementMonstres2 = document.getElementsByClassName("Monstre2");
+var elementMonstres3 = document.getElementsByClassName("Monstre3");
+
