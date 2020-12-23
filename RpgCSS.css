@@ -2,14 +2,6 @@ body {
     background-color: black;
 }
 
-.Background{
-  background-image:url(Fond_Combat.png);
-  background-position : center center;
-  background-repeat: no-repeat;
-  background-size : contain ;
-  background-color: black;
-}
-
 .MonstersPlacement{
   height: 250px ;
   width: 600px;
@@ -33,4 +25,23 @@ input {
   color: darkblue;
   padding: 8px 32px;
   text-align: center;
+}
+
+input:hover {
+  color: darkblue;
+  background-color: lightgrey;
+}
+
+.Monstre1 {
+  height : 100px;
+  width : 400px;
+  margin-top: 300px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-image: url(pumpkin.png);
+  background-repeat: no-repeat;
+  background-position : center center;
+  background-size : contain ;
+  color: darkblue;
 }
