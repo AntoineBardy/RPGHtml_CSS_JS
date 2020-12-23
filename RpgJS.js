@@ -11,7 +11,17 @@ var stage = 0;
 var tour = 0;
 var dialogue = document.getElementById('Dialogue');
 
-var elementMonstres1 = document.getElementsByClassName("Monstre1");
-var elementMonstres2 = document.getElementsByClassName("Monstre2");
-var elementMonstres3 = document.getElementsByClassName("Monstre3");
+var monstersElements = document.getElementsByClassName("Monstre1");
+var monstersElements = document.getElementsByClassName("Monstre2");
+var monstersElements = document.getElementsByClassName("Monstre3");
 
+var monsters = [pumpkin, AlienCaptain, SkullDemon];
+for (var i = 0; i < monstersElements.length; i++)
+{
+  monsters[i].element = monstersElements[i];
+  monstersElements[i].addEventListener('mouseover', changeDefOver);
+  monstersElements[i].addEventListener('click', changeDefClick);
+  monstersElements[i].addEventListener('mouseout', changeDefOut);
+}
+var target = monsters[0];
+var characters = [MatthieuLeBoss, MiniLaink, MuscleTom, Bouclette];
