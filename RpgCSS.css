@@ -4,11 +4,11 @@ body {
 
 .MonstersPlacement{
   height: 250px ;
-  width: 600px;
+  width: 0px;
   margin: auto;
   display : flex;
-  align-content: center;
-  justify-content: space-evenly;
+  align-content: space-between;
+  justify-content: center;
 }
 
 table {
@@ -58,3 +58,30 @@ input:hover {
   background-size : contain ;
   color: darkblue;
 }
+
+.Monstre3 {
+  height : 200px;
+  width : 500px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-image: url(Skull_demon.png);
+  background-repeat: no-repeat;
+  background-position : center center;
+  background-size : contain ;
+  color: darkblue;
+}
+
+.InfoBulle {
+  height : 40px;
+  width : 170px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  color: white;
+  visibility: hidden;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
