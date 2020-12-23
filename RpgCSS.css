@@ -2,11 +2,9 @@ body {
     background-color: black;
 }
 
-.MonstersPlacement{
-  height: 250px ;
-  width: 0px;
-  margin: auto;
+.PlacementM{
   display : flex;
+  flex-direction: row;
   align-content: space-between;
   justify-content: center;
 }
@@ -35,10 +33,7 @@ input:hover {
 .Monstre1 {
   height : 100px;
   width : 400px;
-  margin-top: 300px;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+  margin-top: 200px;
   background-image: url(pumpkin.png);
   background-repeat: no-repeat;
   background-position : center center;
@@ -46,12 +41,9 @@ input:hover {
   color: darkblue;
 }
 .Monstre2 {
-  height : 150px;
+  height : 200px;
   width : 500px;
   margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
   background-image: url(Alien_capitain.png);
   background-repeat: no-repeat;
   background-position : center center;
@@ -63,9 +55,6 @@ input:hover {
   height : 200px;
   width : 500px;
   margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
   background-image: url(Skull_demon.png);
   background-repeat: no-repeat;
   background-position : center center;
@@ -95,4 +84,3 @@ input:hover {
   flex-direction: column;
 
 }
-
